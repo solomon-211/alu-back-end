@@ -8,7 +8,7 @@ import requests
 import sys
 
 
-# Constant for the API base URL (PEP 8: constants are UPPERCASE)
+# Constant for the API base URL
 BASE_URL = "https://jsonplaceholder.typicode.com"
 
 
@@ -68,4 +68,3 @@ if __name__ == "__main__":
         sys.exit(1)
 
     get_employee_todo_progress(employee_id)
-
