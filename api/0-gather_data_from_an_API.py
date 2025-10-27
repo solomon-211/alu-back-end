@@ -1,13 +1,21 @@
 #!/usr/bin/python3
+"""
+Python script that uses a REST API to get information about an employee's
+TODO list progress for a given employee ID.
+"""
+
 import requests
 import sys
+
 
 # Constant for the API base URL
 BASE_URL = "https://jsonplaceholder.typicode.com"
 
 
 def get_employee_todo_progress(employee_id):
-
+    """
+    Fetch and display the TODO list progress for the specified employee ID.
+    """
     # Fetch employee information
     user_url = "{}/users/{}".format(BASE_URL, employee_id)
     user_response = requests.get(user_url)
@@ -23,7 +31,7 @@ def get_employee_todo_progress(employee_id):
 
     employee_name = user_data.get("name")
 
-    # Fetch employee's todos list
+    # Fetch employee's TODO list
     todos_url = "{}/todos".format(BASE_URL)
     todos_response = requests.get(todos_url, params={"userId": employee_id})
 
@@ -45,7 +53,10 @@ def get_employee_todo_progress(employee_id):
 
 
 if __name__ == "__main__":
-
+    """
+    Main entry point of the script.
+    Validates arguments and calls the main function.
+    """
     if len(sys.argv) != 2:
         print("Usage: ./0-gather_data_from_an_API.py <employee_id>")
         sys.exit(1)
