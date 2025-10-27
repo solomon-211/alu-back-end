@@ -8,7 +8,7 @@ import requests
 import sys
 
 
-# Constant for the API base URL
+# Constant for the API base URL (PEP 8: constants are UPPERCASE)
 BASE_URL = "https://jsonplaceholder.typicode.com"
 
 
