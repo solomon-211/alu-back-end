@@ -5,8 +5,8 @@ Usage: ./2-export_to_JSON.py EMPLOYEE_ID
 """
 
 import json
-import sys
 import requests
+import sys
 
 
 def fetch_employee_data(employee_id):
