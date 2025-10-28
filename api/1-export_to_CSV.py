@@ -8,7 +8,6 @@ import sys
 
 import requests
 
-
 def fetch_employee_data(employee_id):
     """Fetch employee data from the REST API."""
     url = "https://jsonplaceholder.typicode.com/users/{}".format(employee_id)
@@ -58,4 +57,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
