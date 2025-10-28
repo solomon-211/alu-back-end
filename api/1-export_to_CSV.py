@@ -3,9 +3,8 @@
 Exports employee TODO list progress to a CSV file
 """
 import csv
-import sys
-
 import requests
+import sys
 
 
 def fetch_employee_data(employee_id):
