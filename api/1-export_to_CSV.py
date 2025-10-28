@@ -2,8 +2,8 @@
 """
 Exports employee TODO list progress to a CSV file
 """
-import csv
 import requests
+import csv
 import sys
 
 
