@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Exports employee TODO list progress to a CSV file.
-Usage: ./1-export_to_CSV.py EMPLOYEE_ID
+Exports employee TODO list progress to a CSV file
 """
 
 import csv
