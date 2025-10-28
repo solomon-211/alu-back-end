@@ -1,8 +1,6 @@
 
 #!/usr/bin/python3
-rts employee TODO list progress to a CSV file.
-Usage: ./1-export_to_CSV.py EMPLOYEE_ID
-"""
+# emplyee todo list to csv file
 
 import csv
 import sys
