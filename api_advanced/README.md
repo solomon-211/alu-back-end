@@ -16,4 +16,3 @@ It uses import requests modules to get access to the remote url
 ```python
 >>> from subs import number_of_subscribers
 >>> print(number_of_subscribers('python'))
-
